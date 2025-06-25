@@ -45,14 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Video placeholder click handler
-    document.querySelectorAll('.video-placeholder').forEach(placeholder => {
-        placeholder.addEventListener('click', function() {
-            // In a real implementation, this would open a modal with the actual video
-            alert('Video playback would start here in a full implementation.');
-        });
-    });
-    
     // Close mobile menu when clicking on a link
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', function() {
