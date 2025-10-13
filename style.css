@@ -497,11 +497,10 @@ header {
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
-
 /* Gallery Section */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -510,8 +509,9 @@ header {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--shadow);
-    height: 250px;
+    height: 220px; /* Reduced from 250px for better proportions */
     transition: var(--transition);
+    aspect-ratio: 4/3; /* Better image proportions */
 }
 
 .gallery-item:hover {
@@ -526,7 +526,7 @@ header {
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Reduced from 1.1 for smoother effect */
 }
 
 .gallery-overlay {
@@ -535,12 +535,14 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(139, 69, 19, 0.8);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(160, 82, 45, 0.7) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: var(--transition);
+    padding: 20px;
+    text-align: center;
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -549,7 +551,62 @@ header {
 
 .gallery-overlay h3 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Slightly smaller for better fit */
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    
+    .gallery-item {
+        height: 200px;
+    }
+    
+    .gallery-overlay h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .gallery-item {
+        height: 180px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .gallery-overlay h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Optional: Add loading state for images */
+.gallery-item img {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.gallery-item img:not([src]), 
+.gallery-item img[src=""], 
+.gallery-item img[src="#"] {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
 }
 
 /* Videos Section */
