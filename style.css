@@ -501,19 +501,19 @@ header {
 .timeline-content h3 {
     color: var(--primary-color);
     margin-bottom: 8px;
-    font-size: 1.4rem; /* Slightly larger */
+    font-size: 1.6rem; /* Increased from 1.4rem */
     font-weight: 600;
 }
 
 .timeline-content h4 {
     color: var(--accent-color);
     margin-bottom: 12px;
-    font-size: 1.1rem; /* Slightly larger */
+    font-size: 1.3rem; /* Increased from 1.1rem */
     font-weight: 500;
 }
 
 .timeline-content p {
-    font-size: 1.05rem; /* Slightly larger text */
+    font-size: 1.2rem; /* Increased from 1.05rem */
     line-height: 1.7;
     color: var(--text-color);
 }
@@ -524,7 +524,7 @@ header {
     color: white;
     padding: 8px 18px; /* More padding */
     border-radius: 25px; /* More rounded */
-    font-size: 0.95rem; /* Slightly larger */
+    font-size: 1.0rem; /* Increased from 0.95rem */
     margin-bottom: 18px;
     font-weight: 500;
     box-shadow: 0 2px 8px rgba(139, 69, 19, 0.3);
@@ -567,11 +567,11 @@ header {
     }
     
     .timeline-content h3 {
-        font-size: 1.3rem;
+        font-size: 1.5rem; /* Adjusted for mobile */
     }
     
     .timeline-content h4 {
-        font-size: 1.05rem;
+        font-size: 1.2rem; /* Adjusted for mobile */
     }
 }
 
