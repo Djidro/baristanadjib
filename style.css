@@ -1282,3 +1282,23 @@ img {
         padding: 10px 12px;
     }
 }
+/* FIX FOR TIMELINE VISIBILITY - Add this to the end of your CSS */
+.timeline-item {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.timeline-content,
+.timeline-content h3, 
+.timeline-content h4,
+.timeline-content p,
+.timeline-content .date {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Remove any JavaScript animations from timeline items */
+#experience .timeline-item {
+    transition: none !important;
+    animation: none !important;
+}
