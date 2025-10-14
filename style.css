@@ -704,88 +704,150 @@ img {
     color: var(--primary-color);
 }
 
-/* Testimonials Section */
-.testimonials-slider {
-    position: relative;
+/* Coffee Quiz Section */
+.quiz-container {
     max-width: 800px;
     margin: 0 auto;
-    overflow: hidden;
-}
-
-.testimonial-item {
-    display: none;
-    padding: 40px;
     background-color: var(--light-color);
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 40px;
     box-shadow: var(--shadow);
+}
+
+.quiz-header {
     text-align: center;
-}
-
-.testimonial-item.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.testimonial-content p {
-    font-size: 1.1rem;
-    font-style: italic;
     margin-bottom: 30px;
-    position: relative;
 }
 
-.testimonial-content p::before,
-.testimonial-content p::after {
-    content: '"';
-    font-size: 2rem;
+.quiz-header h3 {
     color: var(--primary-color);
-    position: absolute;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.testimonial-content p::before {
-    top: -10px;
-    left: -20px;
+.quiz-header p {
+    color: var(--text-color);
+    opacity: 0.8;
 }
 
-.testimonial-content p::after {
-    bottom: -30px;
-    right: -20px;
+.question-container {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(139, 69, 19, 0.1);
 }
 
-.testimonial-author h4 {
-    color: var(--primary-color);
-    margin-bottom: 5px;
+.question-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text-color);
 }
 
-.testimonial-nav {
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+.option.selected {
+    border-color: var(--primary-color);
+    background-color: rgba(139, 69, 19, 0.1);
+}
+
+.option input {
+    margin-right: 12px;
+    transform: scale(1.2);
+}
+
+.option label {
+    cursor: pointer;
+    width: 100%;
+}
+
+.quiz-actions {
     display: flex;
     justify-content: center;
-    gap: 20px;
     margin-top: 30px;
 }
 
-.testimonial-prev,
-.testimonial-next {
+.submit-btn {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-shadow: var(--shadow);
 }
 
-.testimonial-prev:hover,
-.testimonial-next:hover {
+.submit-btn:hover {
     background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.results-container {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--light-color);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.score-display {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+.score-message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.score-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.restart-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.restart-btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
 }
 
 /* Contact Section */
@@ -1116,6 +1178,15 @@ img {
         width: 350px;
         height: 450px;
     }
+    
+    /* Quiz responsive */
+    .quiz-container {
+        padding: 30px 20px;
+    }
+    
+    .question-text {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1144,5 +1215,18 @@ img {
     
     .gallery-overlay h3 {
         font-size: 1.5rem;
+    }
+    
+    /* Quiz mobile adjustments */
+    .quiz-container {
+        padding: 20px 15px;
+    }
+    
+    .score-display {
+        font-size: 2.5rem;
+    }
+    
+    .option {
+        padding: 10px 12px;
     }
 }
