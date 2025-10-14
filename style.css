@@ -1029,3 +1029,20 @@ img {
         height: 360px;
     }
 }
+/* Contact Section Updates */
+.form-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.contact-description {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-top: 5px;
+    line-height: 1.4;
+}
