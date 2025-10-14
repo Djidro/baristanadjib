@@ -133,27 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
         showTestimonial(nextIndex);
     }, 5000);
 
-   // Contact Form Submission
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Simple validation
-    if (name && email && message) {
-        // Show confirmation with your email address
-        alert(`Thank you, ${name}! Your message has been sent to nadjibharera@gmail.com. I'll get back to you soon.`);
-        contactForm.reset();
-    } else {
-        alert('Please fill in all fields.');
-    }
-});
-
     // Download CV Button
     const downloadBtn = document.getElementById('download-cv');
     
