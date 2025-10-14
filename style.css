@@ -501,19 +501,19 @@ header {
 .timeline-content h3 {
     color: var(--primary-color);
     margin-bottom: 8px;
-    font-size: 1.6rem; /* Increased from 1.4rem */
+    font-size: 1.6rem; /* Consistent with Barista Kigali Café */
     font-weight: 600;
 }
 
 .timeline-content h4 {
     color: var(--accent-color);
     margin-bottom: 12px;
-    font-size: 1.3rem; /* Increased from 1.1rem */
+    font-size: 1.3rem; /* Consistent with Barista Kigali Café */
     font-weight: 500;
 }
 
 .timeline-content p {
-    font-size: 1.2rem; /* Increased from 1.05rem */
+    font-size: 1.2rem; /* Consistent with Barista Kigali Café */
     line-height: 1.7;
     color: var(--text-color);
 }
@@ -524,7 +524,7 @@ header {
     color: white;
     padding: 8px 18px; /* More padding */
     border-radius: 25px; /* More rounded */
-    font-size: 1.0rem; /* Increased from 0.95rem */
+    font-size: 1.0rem; /* Consistent with Barista Kigali Café */
     margin-bottom: 18px;
     font-weight: 500;
     box-shadow: 0 2px 8px rgba(139, 69, 19, 0.3);
@@ -596,7 +596,6 @@ header {
         font-size: 0.9rem;
     }
 }
-
 /* Gallery Section - Larger Images */
 .gallery-grid {
     display: grid;
