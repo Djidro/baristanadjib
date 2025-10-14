@@ -663,30 +663,25 @@ img {
     height: auto;
 }
 
-/* Videos Section */
+/* Videos Grid */
 .videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    margin-top: 40px;
 }
 
-.video-item {
-    background-color: var(--light-color);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-.video-item:hover {
-    transform: translateY(-5px);
-}
-
+/* Video Wrapper - UPDATED FOR VERTICAL SHORTS */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    width: 100%;
     height: 0;
+    padding-bottom: 177.78%; /* 9:16 aspect ratio for vertical Shorts */
+    margin-bottom: 15px;
+    background: #000;
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .video-wrapper iframe {
@@ -698,10 +693,25 @@ img {
     border: none;
 }
 
+/* Video Item Styling */
 .video-item h3 {
-    padding: 20px;
     text-align: center;
-    color: var(--primary-color);
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .video-wrapper {
+        padding-bottom: 177.78%; /* Maintain vertical aspect ratio */
+    }
 }
 
 /* Coffee Quiz Section */
