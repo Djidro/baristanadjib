@@ -29,7 +29,7 @@
                     <a href="#experience" class="nav-link">Experience</a>
                     <a href="#gallery" class="nav-link">Gallery</a>
                     <a href="#videos" class="nav-link">Videos</a>
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#quiz" class="nav-link">Coffee Quiz</a>
                     <a href="#contact" class="nav-link">Contact</a>
                     <div class="theme-toggle">
                         <i class="fas fa-moon"></i>
@@ -297,41 +297,24 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section">
+    <!-- Coffee Quiz Section -->
+    <section id="quiz" class="section">
         <div class="container">
-            <h2 class="section-title">Testimonials</h2>
-            <div class="testimonials-slider">
-                <div class="testimonial-item active">
-                    <div class="testimonial-content">
-                        <p>"Nadjib's attention to detail in coffee preparation is exceptional. He consistently creates beautiful latte art and maintains excellent customer relationships."</p>
-                        <div class="testimonial-author">
-                            <h4>Sarah Johnson</h4>
-                            <span>Café Manager, Royal Coffee House</span>
-                        </div>
-                    </div>
+            <h2 class="section-title">Coffee Knowledge Quiz</h2>
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h3>Test Your Coffee Knowledge</h3>
+                    <p>Answer 10 random questions about coffee and see how much you know!</p>
                 </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Working with Nadjib was a pleasure. His knowledge of coffee varieties and brewing techniques elevated our menu and customer experience significantly."</p>
-                        <div class="testimonial-author">
-                            <h4>Michael Brown</h4>
-                            <span>Owner, Kigali Café</span>
-                        </div>
-                    </div>
+                
+                <div id="quiz-content">
+                    <!-- Quiz questions will be dynamically inserted here -->
                 </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Nadjib's passion for coffee is contagious. He trained our new staff with patience and expertise, improving our team's overall performance."</p>
-                        <div class="testimonial-author">
-                            <h4>Emily Chen</h4>
-                            <span>Head Barista, Morning Brew</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-nav">
-                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                
+                <div class="quiz-actions">
+                    <button id="submit-quiz" class="submit-btn">
+                        <i class="fas fa-check-circle"></i> Submit Answers
+                    </button>
                 </div>
             </div>
         </div>
