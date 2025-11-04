@@ -3,366 +3,407 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barista Nadjib | Professional Barista Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Barista Nadjib | Professional Barista & Latte Artist Portfolio</title>
+    <meta name="description" content="Barista Nadjib - Professional barista specializing in latte art, espresso preparation, and exceptional coffee experiences. Available for hire in Oman.">
+    <meta name="keywords" content="barista, coffee, latte art, espresso, Oman, barista for hire, specialty coffee, barista portfolio">
+    <meta name="author" content="Harerimana Nadjib">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Barista Nadjib | Professional Barista Portfolio">
+    <meta property="og:description" content="Professional barista specializing in latte art, espresso preparation, and exceptional coffee experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://djidro.github.io/Portfolio-/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
 </head>
 <body>
     <!-- Preloader -->
-    <div id="preloader">
+    <div id="preloader" aria-label="Loading content">
         <div class="coffee-cup">
             <div class="coffee"></div>
         </div>
         <p>Brewing your experience...</p>
     </div>
 
+    <!-- Skip to Main Content for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header / Navigation -->
-    <header id="header">
-        <nav class="navbar">
+    <header id="header" role="banner">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="nav-container">
-                <a href="#home" class="nav-logo">Barista Nadjib</a>
-                <div class="nav-menu" id="nav-menu">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#gallery" class="nav-link">Gallery</a>
-                    <a href="#videos" class="nav-link">Videos</a>
-                    <a href="#quiz" class="nav-link">Coffee Quiz</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="theme-toggle">
-                        <i class="fas fa-moon"></i>
-                    </div>
+                <a href="#home" class="nav-logo" aria-label="Barista Nadjib homepage">Barista Nadjib</a>
+                
+                <div class="nav-menu" id="nav-menu" role="menubar">
+                    <a href="#home" class="nav-link" role="menuitem">Home</a>
+                    <a href="#about" class="nav-link" role="menuitem">About</a>
+                    <a href="#skills" class="nav-link" role="menuitem">Skills</a>
+                    <a href="#experience" class="nav-link" role="menuitem">Experience</a>
+                    <a href="#gallery" class="nav-link" role="menuitem">Gallery</a>
+                    <a href="#videos" class="nav-link" role="menuitem">Videos</a>
+                    <a href="#quiz" class="nav-link" role="menuitem">Coffee Quiz</a>
+                    <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                    
+                    <button class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                        <span class="theme-text">Dark Mode</span>
+                    </button>
                 </div>
-                <div class="nav-toggle" id="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="container">
-            <div class="home-content">
-                <div class="home-text">
-                    <h1>Harerimana Nadjib</h1>
-                    <p class="intro-text">A passionate barista dedicated to creating perfect coffee experiences and mastering the art of latte design.</p>
-                    <div class="home-buttons">
-                        <a href="https://wa.me/96878440900" class="btn hire-btn" target="_blank">
-                            <i class="fab fa-whatsapp"></i> Hire Me
-                        </a>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section" aria-labelledby="home-title">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-text">
+                        <h1 id="home-title">Harerimana Nadjib</h1>
+                        <p class="intro-text">A passionate barista dedicated to creating perfect coffee experiences and mastering the art of latte design.</p>
+                        <div class="home-buttons">
+                            <a href="https://wa.me/96878440900" class="btn hire-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact me on WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> Hire Me
+                            </a>
+                            <a href="#contact" class="btn secondary-btn" aria-label="View contact information">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="home-image">
-                    <div class="portrait-container">
-                        <!-- Replace with your JPG image -->
-                        <img src="Nadjib.jpg" alt="Barista Nadjib" class="portrait">
-                        <div class="coffee-steam"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I've been crafting coffee since 2022, focusing on espresso perfection and customer satisfaction. My journey began in a small local café where I discovered my passion for the art of coffee making.</p>
-                    <p>Over the years, I've honed my skills in specialty coffee preparation, latte art, and customer service. I love experimenting with new coffee blends and sharing my passion for coffee culture with others.</p>
-                    <p>My goal is to continue growing in the specialty coffee industry, eventually opening my own café that serves as a community hub for coffee enthusiasts.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>4+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat">
-                        <h3>1000+</h3>
-                        <p>Cups Brewed</p>
-                    </div>
-                    <div class="stat">
-                        <h3>50+</h3>
-                        <p>Latte Art Designs</p>
+                    <div class="home-image">
+                        <div class="portrait-container">
+                            <img src="Nadjib.jpg" alt="Barista Nadjib smiling while preparing coffee" class="portrait" loading="eager" width="400" height="500">
+                            <div class="coffee-steam" aria-hidden="true"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-coffee"></i>
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 class="section-title" id="about-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I've been crafting exceptional coffee experiences since 2022, focusing on espresso perfection and unparalleled customer satisfaction. My journey began in a small local café where I discovered my passion for the art and science of coffee making.</p>
+                        <p>Over the years, I've honed my expertise in specialty coffee preparation, intricate latte art, and creating memorable customer experiences. I continuously experiment with new coffee blends and brewing techniques while sharing my passion for coffee culture with enthusiasts.</p>
+                        <p>My goal is to continue growing in the specialty coffee industry, with aspirations to open my own café that serves as a community hub for coffee lovers and a platform for innovation in coffee craftsmanship.</p>
                     </div>
-                    <h3>Espresso Preparation</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-level="95"></div>
-                    </div>
-                    <span class="skill-percent">95%</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>Latte Art</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-level="90"></div>
-                    </div>
-                    <span class="skill-percent">90%</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Customer Service</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-level="98"></div>
-                    </div>
-                    <span class="skill-percent">98%</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Coffee Machine Maintenance</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-level="85"></div>
-                    </div>
-                    <span class="skill-percent">85%</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Teamwork & Time Management</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-level="92"></div>
-                    </div>
-                    <span class="skill-percent">92%</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Menu Innovation</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-level="88"></div>
-                    </div>
-                    <span class="skill-percent">88%</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section - UPDATED WITH TIMELINE DOTS -->
-    <section id="experience" class="section">
-        <div class="container experience-container">
-            <h2 class="section-title">My Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="date">2022 – 2023</span>
-                        <h3>Barista Trainer</h3>
-                        <h4>Kigali Barista</h4>
-                        <p>I worked as a barista and student trainer, focusing on latte art and coffee theory. My role involved preparing high-quality espresso-based drinks, training new baristas and students on brewing techniques, milk texturing, and coffee presentation.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="date">2023-2024</span>
-                        <h3>Barista</h3>
-                        <h4>Morpho Café</h4>
-                        <p>Prepared specialty coffee drinks, managed inventory, maintained equipment, and provided exceptional customer service.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="date">2024 2025</span>
-                        <h3>Barista</h3>
-                        <h4>Limitless Caffè</h4>
-                        <p>I worked as a barista, where I crafted a variety of espresso-based drinks and specialized in latte art and coffee preparation. My work involved creating consistent, high-quality beverages, maintaining a clean and welcoming workspace, and ensuring every customer received excellent service..</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Cups Brewed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Latte Art Designs</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Professional Cafés</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="section">
-        <div class="container">
-            <h2 class="section-title">Coffee Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <!-- Replace with your JPG images -->
-                    <img src="Gallery1.jpg" alt="Latte Art">
-                    <div class="gallery-overlay">
+        <!-- Skills Section -->
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 class="section-title" id="skills-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon" aria-hidden="true">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Espresso Preparation</h3>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-level="95"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon" aria-hidden="true">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
                         <h3>Latte Art</h3>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-level="90"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="Gallery2.jpg" alt="pegasus lattee">
-                    <div class="gallery-overlay">
-                        <h3>pegasus lattee</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon" aria-hidden="true">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Customer Service</h3>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-level="98"></div>
+                        </div>
+                        <span class="skill-percent">98%</span>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="Gallery3.jpg" alt="Espresso">
-                    <div class="gallery-overlay">
-                        <h3> sleeping angel lattee</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon" aria-hidden="true">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Coffee Machine Maintenance</h3>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-level="85"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="Gallery4.jpg" alt="ostrich lattee">
-                    <div class="gallery-overlay">
-                        <h3>ostrich latte</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon" aria-hidden="true">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Teamwork & Time Management</h3>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-level="92"></div>
+                        </div>
+                        <span class="skill-percent">92%</span>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="Gallery5.jpg" alt="Tiger lattee">
-                    <div class="gallery-overlay">
-                        <h3>Tiger lattee</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="Gallery6.jpg" alt="Rose latte">
-                    <div class="gallery-overlay">
-                        <h3>Rose Lattee</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon" aria-hidden="true">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Menu Innovation</h3>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-level="88"></div>
+                        </div>
+                        <span class="skill-percent">88%</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
- <!-- Videos Section -->
-<section id="videos" class="section">
-    <div class="container">
-        <h2 class="section-title">Coffee Videos</h2>
-        <div class="videos-grid">
-            <div class="video-item">
-                <div class="video-wrapper">
-                    <iframe 
-                        src="https://www.youtube.com/embed/VQXk9DSBzhw?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
-                        title="Rose Latte" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+        <!-- Experience Section -->
+        <section id="experience" class="section" aria-labelledby="experience-title">
+            <div class="container experience-container">
+                <h2 class="section-title" id="experience-title">My Experience</h2>
+                <div class="timeline" role="list">
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="date">2022 – 2023</span>
+                            <h3>Barista Trainer</h3>
+                            <h4>Kigali Barista</h4>
+                            <p>I worked as a barista and student trainer, focusing on latte art and coffee theory. My role involved preparing high-quality espresso-based drinks, training new baristas and students on brewing techniques, milk texturing, and coffee presentation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="date">2023 – 2024</span>
+                            <h3>Barista</h3>
+                            <h4>Morpho Café</h4>
+                            <p>Prepared specialty coffee drinks, managed inventory, maintained equipment, and provided exceptional customer service in a high-volume café environment.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="date">2024 – 2025</span>
+                            <h3>Barista</h3>
+                            <h4>Limitless Caffè</h4>
+                            <p>I worked as a barista, where I crafted a variety of espresso-based drinks and specialized in latte art and coffee preparation. My work involved creating consistent, high-quality beverages, maintaining a clean and welcoming workspace, and ensuring every customer received excellent service.</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>Rose latte</h3>
             </div>
-            <div class="video-item">
-                <div class="video-wrapper">
-                    <iframe 
-                        src="https://www.youtube.com/embed/b3UMjSW7JqY?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
-                        title="Horse head latte" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section" aria-labelledby="gallery-title">
+            <div class="container">
+                <h2 class="section-title" id="gallery-title">Coffee Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Gallery1.jpg" alt="Beautiful latte art with intricate design" class="gallery-img" loading="lazy" width="300" height="300">
+                        <div class="gallery-overlay">
+                            <h3>Latte Art</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Gallery2.jpg" alt="Pegasus design in latte art" class="gallery-img" loading="lazy" width="300" height="300">
+                        <div class="gallery-overlay">
+                            <h3>Pegasus Latte</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Gallery3.jpg" alt="Sleeping angel design in latte art" class="gallery-img" loading="lazy" width="300" height="300">
+                        <div class="gallery-overlay">
+                            <h3>Sleeping Angel Latte</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Gallery4.jpg" alt="Ostrich design in latte art" class="gallery-img" loading="lazy" width="300" height="300">
+                        <div class="gallery-overlay">
+                            <h3>Ostrich Latte</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Gallery5.jpg" alt="Tiger design in latte art" class="gallery-img" loading="lazy" width="300" height="300">
+                        <div class="gallery-overlay">
+                            <h3>Tiger Latte</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Gallery6.jpg" alt="Rose design in latte art" class="gallery-img" loading="lazy" width="300" height="300">
+                        <div class="gallery-overlay">
+                            <h3>Rose Latte</h3>
+                        </div>
+                    </div>
                 </div>
-                <h3>Horse head latte</h3>
             </div>
-            <div class="video-item">
-                <div class="video-wrapper">
-                    <iframe 
-                        src="https://www.youtube.com/embed/lcb24R7gV5w?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
-                        title="Swan latte art" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <h3>Swan latte art</h3>
-            </div>
-        </div>
-        
-        <!-- Instagram Call-to-Action -->
-        <div class="instagram-cta" style="text-align: center; margin-top: 40px;">
-            <p style="font-size: 1.1rem; margin-bottom: 15px; color: var(--text-color);">Want to see more daily coffee content?</p>
-            <a href="https://www.instagram.com/_nadjib1" target="_blank" class="btn hire-btn">
-                <i class="fab fa-instagram"></i> Follow me on Instagram
-            </a>
-        </div>
-    </div>
-</section>
-    <!-- Coffee Quiz Section -->
-    <section id="quiz" class="section">
-        <div class="container">
-            <h2 class="section-title">Coffee Knowledge Quiz</h2>
-            <div class="quiz-container">
-                <div class="quiz-header">
-                    <h3>Test Your Coffee Knowledge</h3>
-                    <p>Answer 10 random questions about coffee and see how much you know!</p>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="videos" class="section" aria-labelledby="videos-title">
+            <div class="container">
+                <h2 class="section-title" id="videos-title">Coffee Videos</h2>
+                <div class="videos-grid">
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/VQXk9DSBzhw?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
+                                title="Rose Latte Art Demonstration" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <h3>Rose Latte Art</h3>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/b3UMjSW7JqY?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
+                                title="Horse Head Latte Art Demonstration" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <h3>Horse Head Latte Art</h3>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/lcb24R7gV5w?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
+                                title="Swan Latte Art Demonstration" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <h3>Swan Latte Art</h3>
+                    </div>
                 </div>
                 
-                <div id="quiz-content">
-                    <!-- Quiz questions will be dynamically inserted here -->
-                </div>
-                
-                <div class="quiz-actions">
-                    <button id="submit-quiz" class="submit-btn">
-                        <i class="fas fa-check-circle"></i> Submit Answers
-                    </button>
+                <!-- Instagram Call-to-Action -->
+                <div class="instagram-cta">
+                    <p>Want to see more daily coffee content?</p>
+                    <a href="https://www.instagram.com/_nadjib1" target="_blank" rel="noopener noreferrer" class="btn instagram-btn" aria-label="Follow me on Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Follow me on Instagram
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>WhatsApp</h3>
-                            <a href="https://wa.me/96878440900" target="_blank">+968 7844 0900</a>
-                            <p class="contact-description">Quick responses for urgent inquiries</p>
-                        </div>
+        <!-- Coffee Quiz Section -->
+        <section id="quiz" class="section" aria-labelledby="quiz-title">
+            <div class="container">
+                <h2 class="section-title" id="quiz-title">Coffee Knowledge Quiz</h2>
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <h3>Test Your Coffee Knowledge</h3>
+                        <p>Answer 10 random questions about coffee and see how much you know!</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-instagram"></i>
+                    
+                    <div id="quiz-content" role="form" aria-labelledby="quiz-title">
+                        <!-- Quiz questions will be dynamically inserted here -->
+                    </div>
+                    
+                    <div class="quiz-actions">
+                        <button id="submit-quiz" class="submit-btn" aria-label="Submit quiz answers">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i> Submit Answers
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section-title" id="contact-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/96878440900" target="_blank" rel="noopener noreferrer">+968 7844 0900</a>
+                                <p class="contact-description">Quick responses for urgent inquiries</p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h3>Instagram</h3>
-                            <a href="https://www.instagram.com/_nadjib1" target="_blank">_nadjib1</a>
-                            <p class="contact-description">Follow for coffee updates and latte art</p>
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Instagram</h3>
+                                <a href="https://www.instagram.com/_nadjib1" target="_blank" rel="noopener noreferrer">@_nadjib1</a>
+                                <p class="contact-description">Follow for coffee updates and latte art</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
                     <p>&copy; 2024 Barista Nadjib. All rights reserved.</p>
+                    <p class="footer-tagline">Crafting exceptional coffee experiences</p>
                 </div>
                 <div class="footer-qr">
                     <div class="qr-code">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://djidro.github.io/Portfolio-/" alt="QR Code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://djidro.github.io/Portfolio-/" alt="QR Code to view this portfolio" loading="lazy">
                     </div>
                     <p>Scan to view portfolio</p>
                 </div>
@@ -371,7 +412,7 @@
     </footer>
 
     <!-- Coffee Animation -->
-    <div class="coffee-animation" id="coffeeAnimation">
+    <div class="coffee-animation" id="coffeeAnimation" aria-hidden="true" aria-label="Coffee making animation">
         <div class="animation-container">
             <div class="coffee-cup-anim">
                 <div class="cup"></div>
@@ -379,10 +420,10 @@
                 <div class="handle"></div>
             </div>
             <p>Making your coffee...</p>
-            <button class="close-animation" id="closeAnimation">Close</button>
+            <button class="close-animation" id="closeAnimation" aria-label="Close animation">Close</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
