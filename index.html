@@ -3,39 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="theme-color" content="#8B4513">
+
     <!-- SEO Meta Tags -->
     <title>Barista Nadjib | Professional Barista & Latte Artist Portfolio</title>
     <meta name="description" content="Barista Nadjib - Professional barista specializing in latte art, espresso preparation, and exceptional coffee experiences. Available for hire in Oman.">
     <meta name="keywords" content="barista, coffee, latte art, espresso, Oman, barista for hire, specialty coffee, barista portfolio">
     <meta name="author" content="Harerimana Nadjib">
     <meta name="robots" content="index, follow">
-    
+    <link rel="canonical" href="https://djidro.github.io/baristanadjib/">
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Barista Nadjib | Professional Barista Portfolio">
     <meta property="og:description" content="Professional barista specializing in latte art, espresso preparation, and exceptional coffee experiences.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://djidro.github.io/Portfolio-/">
-    
+    <meta property="og:url" content="https://djidro.github.io/baristanadjib/">
+    <meta property="og:image" content="https://djidro.github.io/baristanadjib/Nadjib.jpg">
+    <meta property="og:site_name" content="Barista Nadjib Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Barista Nadjib | Professional Barista Portfolio">
+    <meta name="twitter:description" content="Professional barista specializing in latte art, espresso preparation, and exceptional coffee experiences.">
+    <meta name="twitter:image" content="https://djidro.github.io/baristanadjib/Nadjib.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Harerimana Nadjib",
+      "jobTitle": "Barista",
+      "url": "https://djidro.github.io/baristanadjib/",
+      "sameAs": ["https://www.instagram.com/_nadjib1"]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Preload Critical Resources -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preload" href="script.js" as="script">
 </head>
 <body>
+    <!-- Custom Cursor (desktop only) -->
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <!-- Floating Coffee Bean / Steam Particles -->
+    <div class="particles-container" id="particlesContainer" aria-hidden="true"></div>
+
+    <!-- Page-load Curtain Reveal -->
+    <div class="curtain curtain-left" id="curtainLeft" aria-hidden="true"></div>
+    <div class="curtain curtain-right" id="curtainRight" aria-hidden="true"></div>
+
     <!-- Preloader -->
     <div id="preloader" aria-label="Loading content">
         <div class="coffee-cup">
             <div class="coffee"></div>
         </div>
-        <p>Brewing your experience...</p>
+        <p class="brew-text">Brewing your experience...</p>
     </div>
 
     <!-- Skip to Main Content for Accessibility -->
@@ -46,7 +79,7 @@
         <nav class="navbar" aria-label="Main navigation">
             <div class="nav-container">
                 <a href="#home" class="nav-logo" aria-label="Barista Nadjib homepage">Barista Nadjib</a>
-                
+
                 <div class="nav-menu" id="nav-menu" role="menubar">
                     <a href="#home" class="nav-link" role="menuitem">Home</a>
                     <a href="#about" class="nav-link" role="menuitem">About</a>
@@ -56,13 +89,13 @@
                     <a href="#videos" class="nav-link" role="menuitem">Videos</a>
                     <a href="#quiz" class="nav-link" role="menuitem">Coffee Quiz</a>
                     <a href="#contact" class="nav-link" role="menuitem">Contact</a>
-                    
+
                     <button class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle">
                         <i class="fas fa-moon" aria-hidden="true"></i>
                         <span class="theme-text">Dark Mode</span>
                     </button>
                 </div>
-                
+
                 <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
                     <span class="bar" aria-hidden="true"></span>
                     <span class="bar" aria-hidden="true"></span>
@@ -90,7 +123,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="home-image">
+                    <div class="home-image" data-parallax="0.12">
                         <div class="portrait-container">
                             <img src="Nadjib.jpg" alt="Barista Nadjib smiling while preparing coffee" class="portrait" loading="eager" width="400" height="500">
                             <div class="coffee-steam" aria-hidden="true"></div>
@@ -289,11 +322,11 @@
                 <div class="videos-grid">
                     <div class="video-item">
                         <div class="video-wrapper">
-                            <iframe 
+                            <iframe
                                 src="https://www.youtube.com/embed/VQXk9DSBzhw?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
-                                title="Rose Latte Art Demonstration" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                title="Rose Latte Art Demonstration"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                                 loading="lazy">
                             </iframe>
@@ -302,11 +335,11 @@
                     </div>
                     <div class="video-item">
                         <div class="video-wrapper">
-                            <iframe 
+                            <iframe
                                 src="https://www.youtube.com/embed/b3UMjSW7JqY?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
-                                title="Horse Head Latte Art Demonstration" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                title="Horse Head Latte Art Demonstration"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                                 loading="lazy">
                             </iframe>
@@ -315,11 +348,11 @@
                     </div>
                     <div class="video-item">
                         <div class="video-wrapper">
-                            <iframe 
+                            <iframe
                                 src="https://www.youtube.com/embed/lcb24R7gV5w?rel=0&controls=1&modestbranding=1&vq=hd720&playsinline=1"
-                                title="Swan Latte Art Demonstration" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                title="Swan Latte Art Demonstration"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                                 loading="lazy">
                             </iframe>
@@ -327,7 +360,7 @@
                         <h3>Swan Latte Art</h3>
                     </div>
                 </div>
-                
+
                 <!-- Instagram Call-to-Action -->
                 <div class="instagram-cta">
                     <p>Want to see more daily coffee content?</p>
@@ -345,13 +378,13 @@
                 <div class="quiz-container">
                     <div class="quiz-header">
                         <h3>Test Your Coffee Knowledge</h3>
-                        <p>Answer 10 random questions about coffee and see how much you know!</p>
+                        <p>Answer these questions about coffee and see how much you know!</p>
                     </div>
-                    
+
                     <div id="quiz-content" role="form" aria-labelledby="quiz-title">
                         <!-- Quiz questions will be dynamically inserted here -->
                     </div>
-                    
+
                     <div class="quiz-actions">
                         <button id="submit-quiz" class="submit-btn" aria-label="Submit quiz answers">
                             <i class="fas fa-check-circle" aria-hidden="true"></i> Submit Answers
@@ -401,6 +434,8 @@
                     <p>&copy; 2024 Barista Nadjib. All rights reserved.</p>
                     <p class="footer-tagline">Crafting exceptional coffee experiences</p>
                 </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Coffee Animation -->
